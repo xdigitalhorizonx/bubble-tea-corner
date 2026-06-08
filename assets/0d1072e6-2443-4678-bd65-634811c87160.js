@@ -222,7 +222,21 @@
     feedback('Chase mode off');
   }
 
+  // speech bubble: the mascot bubble "talks" when clicked
+  var sayEl = bubble.querySelector('.chase-say');
+  var sayTimer = null;
+  function say(msg) {
+    if (!sayEl) return;
+    sayEl.textContent = msg;
+    sayEl.classList.remove('show');
+    void sayEl.offsetWidth; // restart the transition if clicked rapidly
+    sayEl.classList.add('show');
+    clearTimeout(sayTimer);
+    sayTimer = setTimeout(function () { sayEl.classList.remove('show'); }, 3000);
+  }
+
   bubble.addEventListener('click', function () {
+    say('brandon is goated!');
     if (active) stop(); else start();
   });
 })();
