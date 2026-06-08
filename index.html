@@ -615,6 +615,14 @@ body.chase-on #cursor-chaser{display:block;}
 .lightmode-bubble:hover .tip{opacity:1;}
 @media (prefers-reduced-motion:reduce){.lightmode-bubble{animation:none;}}
 @media (pointer:coarse){.lightmode-bubble{right:18px;}}
+/* mobile: light toggle becomes a clean bottom-right button; hide cursor-chase + edge-clipping cups */
+@media (max-width:600px){
+  .chase-bubble{display:none;}
+  .lightmode-bubble{top:auto;bottom:20px;right:20px;width:52px;height:52px;}
+  .lightmode-bubble svg{width:23px;height:23px;}
+  .lightmode-bubble .tip{right:auto;left:auto;top:auto;bottom:calc(100% + 10px);right:0;transform:none;}
+  .about-visual .float-cup{display:none;}
+}
 
 /* ===== LIGHT MODE THEME (pastel) ===== */
 body.light{
