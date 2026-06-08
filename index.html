@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bubble Tea Station Corner — Kawaii Bubble Tea</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/9b0271ff-e3b7-4b1d-9a5f-6a7b0b9d1080.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/d5e6d298-b9d7-40ee-9ef1-9cb3b463e8d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/01efda50-74b1-4797-889c-2a1050c1e3b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/9b0271ff-e3b7-4b1d-9a5f-6a7b0b9d1080.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/d5e6d298-b9d7-40ee-9ef1-9cb3b463e8d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/01efda50-74b1-4797-889c-2a1050c1e3b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/2e8a987a-eedd-43d9-a9d2-1d98b6ba1ea7.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/22fb229e-9866-40c8-a949-a7597e6a961d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/212a6e57-ec05-45a2-8da7-5a16f0ad2d53.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/bc3b21b4-877b-4f13-bba0-42a3b71db144.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/64c9982f-0a46-4c1e-b254-183be6900ffb.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/88b92fc3-8e75-4c99-a262-61141c961e92.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/9e90a44a-18f6-4c68-bfbb-b0a060a737b5.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3804d7f9-c5e4-4cb1-8ed2-6f15b5de779c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/69e923a5-2cbe-4fa0-922b-c6d03d587eac.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/5af9be80-dc5f-4305-b66a-53997cab7da7.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/86a016f5-7525-4138-834b-1464548a8b6b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/4363733c-44ab-4d70-a09e-11f58e331bf7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/bd7f1174-0364-42b6-a057-cb4980edc4bf.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/f3a37873-ff6c-40ee-b11a-21ee3c481569.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/bdf417a3-4c27-490d-a05b-87af70e9c557.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>:root{
+  --pink:#ff5fa6;
+  --pink-bright:#ff7cc0;
+  --pink-deep:#ff3d92;
+  --purple:#b06cff;
+  --purple-soft:#a06bff;
+  --blue:#5ec8ff;
+  --ink:#0a0413;
+  --ink-2:#120726;
+  --txt:#f4ecff;
+  --txt-muted:#c8b6da;
+  --card:rgba(28,14,46,0.42);
+  --card-border:rgba(176,108,255,0.20);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+html,body{background:var(--ink);}
+body{
+  font-family:'Poppins',sans-serif;
+  color:var(--txt);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;}
+img{display:block;max-width:100%;}
+
+/* ===== shared section scaffolding ===== */
+.section{position:relative;width:100%;}
+.wrap{width:100%;max-width:1560px;margin:0 auto;padding:0 60px;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;white-space:nowrap;
+  padding:9px 18px;border-radius:30px;
+  font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;
+  color:#f3b9da;border:1px solid rgba(255,95,166,0.40);
+  background:rgba(255,95,166,0.06);box-shadow:0 0 16px rgba(255,95,166,0.10);
+}
+.eyebrow svg{width:15px;height:15px;}
+.sec-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;}
+.sec-title{font-size:54px;font-weight:800;line-height:1.05;color:#fff;letter-spacing:-0.01em;white-space:nowrap;}
+.sec-title .accent{
+  font-family:'Dancing Script',cursive;font-weight:700;line-height:1.2;display:inline-block;
+  background:linear-gradient(92deg,#ff7cc0 0%,#ff5fa6 45%,#c66bff 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 16px rgba(255,95,166,0.5));
+  padding:0 6px;
+}
+.sec-sub{font-size:18px;color:var(--txt-muted);max-width:560px;line-height:1.6;}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative;min-height:100vh;width:100%;
+  background:url("assets/8e73a0da-fb61-401d-bc6e-eb0d355e27cc.png") no-repeat center center;
+  background-size:cover;display:flex;flex-direction:column;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(90deg, rgba(8,3,16,0.92) 0%, rgba(8,3,16,0.74) 30%, rgba(8,3,16,0.30) 52%, rgba(8,3,16,0.0) 68%),
+    linear-gradient(180deg, rgba(8,3,16,0.55) 0%, rgba(8,3,16,0.0) 22%, rgba(8,3,16,0.0) 55%, rgba(8,3,16,0.72) 100%);
+  pointer-events:none;z-index:1;
+}
+.hero > *{position:relative;z-index:2;}
+
+/* floating bubbles */
+.bubble-field{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;}
+.bubble{
+  position:absolute;bottom:-80px;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%, rgba(255,255,255,0.55), rgba(255,150,210,0.18) 42%, rgba(150,90,220,0.10) 70%, rgba(150,90,220,0) 72%);
+  border:1px solid rgba(255,180,225,0.30);
+  box-shadow:0 0 14px rgba(255,120,190,0.18), inset 0 0 10px rgba(255,255,255,0.18);
+  opacity:0;
+  animation:floatUp linear infinite;
+  will-change:transform,opacity;
+}
+@keyframes floatUp{
+  0%{transform:translateY(0) translateX(0) scale(0.9);opacity:0;}
+  12%{opacity:.7;}
+  50%{transform:translateY(-52vh) translateX(var(--sway,14px)) scale(1);}
+  85%{opacity:.6;}
+  100%{transform:translateY(-108vh) translateX(0) scale(1.05);opacity:0;}
+}
+@media (prefers-reduced-motion:reduce){.bubble{animation:none;display:none;}}
+
+/* nav */
+.nav-wrap{padding:22px 40px 0;display:flex;justify-content:center;position:sticky;top:0;z-index:30;}
+.navbar{
+  width:100%;max-width:1560px;display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:14px 18px 14px 22px;border-radius:22px;
+  background:rgba(18,8,30,0.55);border:1px solid rgba(176,108,255,0.18);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 10px 40px rgba(0,0,0,0.35);
+}
+.logo{display:flex;align-items:center;gap:0;}
+.logo .ring{position:relative;width:148px;height:62px;display:flex;align-items:center;justify-content:center;}
+.logo .ring::before{
+  content:"";position:absolute;inset:2px 0;border:2px solid rgba(176,108,255,0.55);border-radius:50%;
+  box-shadow:0 0 10px rgba(176,108,255,0.6), inset 0 0 8px rgba(176,108,255,0.35);
+}
+.logo .lb-name{position:relative;text-align:center;line-height:0.9;transform:translateY(-2px);}
+.logo .lb-top{font-family:'Dancing Script',cursive;font-weight:700;font-size:24px;color:#ffd6ef;text-shadow:0 0 8px var(--pink),0 0 16px var(--pink-deep);}
+.logo .lb-bot{display:block;font-family:'Dancing Script',cursive;font-weight:600;font-size:14px;color:#dcc4ff;text-shadow:0 0 8px var(--purple);margin-top:1px;}
+.nav-links{display:flex;align-items:center;gap:38px;margin-left:auto;margin-right:8px;}
+.nav-links a{font-size:16px;font-weight:500;color:#d9c9ec;position:relative;padding:6px 2px;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+.nav-links a.active{color:var(--pink-bright);text-shadow:0 0 12px rgba(255,124,192,0.7);}
+.nav-links a.active::after{content:"";position:absolute;left:50%;bottom:-7px;width:5px;height:5px;border-radius:50%;background:var(--pink-bright);box-shadow:0 0 8px var(--pink-bright);transform:translateX(-50%);}
+.nav-cta{display:flex;align-items:center;gap:12px;}
+.order-online{
+  display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:30px;
+  font-weight:600;font-size:15px;color:#ffd9ee;border:1.5px solid rgba(255,95,166,0.55);
+  background:rgba(255,95,166,0.07);box-shadow:0 0 18px rgba(255,95,166,0.18), inset 0 0 12px rgba(255,95,166,0.08);
+  transition:transform .2s, box-shadow .2s, background .2s;position:relative;
+}
+.order-online:hover{background:rgba(255,95,166,0.16);box-shadow:0 0 26px rgba(255,95,166,0.34);transform:translateY(-1px);}
+.order-online svg{width:18px;height:18px;}
+.cart-count{
+  position:absolute;top:-8px;right:-8px;min-width:22px;height:22px;padding:0 6px;border-radius:11px;
+  background:linear-gradient(95deg,#ff7cc0,#ff4d97);color:#fff;font-size:12px;font-weight:700;
+  display:none;align-items:center;justify-content:center;box-shadow:0 0 12px rgba(255,77,151,0.6);
+}
+.cart-count.show{display:flex;}
+.nav-call{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;color:#bfe7ff;border:1.5px solid rgba(94,200,255,0.45);background:rgba(94,200,255,0.07);transition:transform .2s,box-shadow .2s,background .2s;}
+.nav-call:hover{background:rgba(94,200,255,0.16);box-shadow:0 0 20px rgba(94,200,255,0.35);transform:translateY(-1px);}
+.nav-call svg{width:19px;height:19px;}
+
+/* hero body */
+.hero-inner{width:100%;max-width:1560px;margin:0 auto;padding:0 60px;flex:1;display:flex;flex-direction:column;justify-content:flex-start;}
+.hero-copy{max-width:680px;padding-top:64px;}
+.badge{
+  display:inline-flex;align-items:center;gap:9px;white-space:nowrap;padding:9px 18px;border-radius:30px;
+  font-size:13px;font-weight:600;letter-spacing:0.22em;color:#f3b9da;text-transform:uppercase;
+  border:1px solid rgba(255,95,166,0.40);background:rgba(255,95,166,0.06);box-shadow:0 0 16px rgba(255,95,166,0.10);
+}
+.badge svg{width:15px;height:15px;}
+h1.headline{margin:24px 0 0;font-weight:800;font-size:70px;line-height:1.0;letter-spacing:-0.01em;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,0.5);position:relative;}
+h1.headline .script{
+  display:block;font-family:'Dancing Script',cursive;font-weight:700;font-size:66px;line-height:1.12;
+  margin-top:8px;white-space:nowrap;
+  background:linear-gradient(92deg,#ff7cc0 0%,#ff5fa6 45%,#c66bff 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 18px rgba(255,95,166,0.55));position:relative;
+}
+.heart-flourish{display:inline-block;width:38px;height:26px;margin-left:6px;vertical-align:0.18em;-webkit-text-fill-color:initial;}
+.spark{position:absolute;color:#ffc8e8;filter:drop-shadow(0 0 6px rgba(255,124,192,0.9));pointer-events:none;}
+.spark.s1{top:-8px;left:330px;width:26px;height:26px;}
+p.lede{margin:26px 0 0;font-size:19px;line-height:1.6;font-weight:400;color:#d7c8e6;max-width:470px;}
+.cta-row{display:flex;gap:18px;margin-top:32px;flex-wrap:wrap;align-items:center;}
+.btn{display:inline-flex;align-items:center;gap:11px;font-size:17px;font-weight:600;border-radius:34px;padding:17px 32px;cursor:pointer;border:none;transition:transform .2s, box-shadow .2s, background .2s;font-family:inherit;}
+.btn svg{width:19px;height:19px;}
+.btn-primary{color:#fff;background:linear-gradient(95deg,#ff7cc0 0%,#ff4d97 100%);box-shadow:0 8px 30px rgba(255,77,151,0.42), 0 0 22px rgba(255,124,192,0.35);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(255,77,151,0.55), 0 0 30px rgba(255,124,192,0.5);}
+.btn-ghost{color:#ecdcff;background:rgba(176,108,255,0.10);border:1.5px solid rgba(176,108,255,0.45);box-shadow:inset 0 0 16px rgba(176,108,255,0.08);}
+.btn-ghost:hover{transform:translateY(-2px);background:rgba(176,108,255,0.18);box-shadow:0 0 24px rgba(176,108,255,0.3);}
+.btn-call{color:#cdecff;background:rgba(94,200,255,0.08);border:1.5px solid rgba(94,200,255,0.45);box-shadow:inset 0 0 16px rgba(94,200,255,0.08);}
+.btn-call:hover{transform:translateY(-2px);background:rgba(94,200,255,0.16);box-shadow:0 0 24px rgba(94,200,255,0.32);}
+.trust{display:flex;align-items:center;gap:8px;margin-top:26px;margin-bottom:30px;font-size:15px;color:#bcaacf;font-weight:500;flex-wrap:wrap;}
+.trust svg{width:18px;height:18px;margin-right:4px;opacity:.9;}
+.trust .dot{opacity:.45;margin:0 6px;}
+
+/* feature cards */
+.features{width:100%;max-width:1560px;margin:0 auto;padding:0 60px 44px;margin-top:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.feature{display:flex;align-items:flex-start;gap:18px;padding:22px 24px;border-radius:18px;background:var(--card);border:1px solid var(--card-border);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 14px 40px rgba(0,0,0,0.35);transition:transform .2s, border-color .2s;}
+.feature:hover{transform:translateY(-3px);border-color:rgba(176,108,255,0.4);}
+.feature .ic{flex-shrink:0;width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;}
+.feature .ic svg{width:26px;height:26px;}
+.ic.pink{background:rgba(255,95,166,0.14);border:1px solid rgba(255,95,166,0.4);color:#ff8ec6;box-shadow:0 0 16px rgba(255,95,166,0.2);}
+.ic.purple{background:rgba(176,108,255,0.14);border:1px solid rgba(176,108,255,0.4);color:#c79bff;box-shadow:0 0 16px rgba(176,108,255,0.2);}
+.ic.blue{background:rgba(94,200,255,0.14);border:1px solid rgba(94,200,255,0.4);color:#8ad8ff;box-shadow:0 0 16px rgba(94,200,255,0.2);}
+.feature h3{font-size:18px;font-weight:600;color:#fff;margin-bottom:5px;}
+.feature p{font-size:14.5px;line-height:1.45;color:#b6a6c9;font-weight:400;}
+
+/* ===== MENU ===== */
+.menu{padding:120px 0 130px;background:
+  radial-gradient(1100px 600px at 12% 0%, rgba(176,108,255,0.12), transparent 60%),
+  radial-gradient(1000px 600px at 92% 30%, rgba(255,95,166,0.10), transparent 60%),
+  var(--ink);}
+.menu-controls{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin:54px 0 40px;}
+.filters{display:flex;gap:10px;flex-wrap:wrap;}
+.filter{
+  font-family:inherit;font-size:15px;font-weight:600;color:#cbb9e0;cursor:pointer;
+  padding:11px 22px;border-radius:30px;border:1.5px solid rgba(176,108,255,0.28);
+  background:rgba(176,108,255,0.06);transition:all .2s;
+}
+.filter:hover{color:#fff;border-color:rgba(176,108,255,0.5);}
+.filter.active{color:#fff;background:linear-gradient(95deg,rgba(255,124,192,0.9),rgba(176,108,255,0.9));border-color:transparent;box-shadow:0 6px 22px rgba(255,95,166,0.32);}
+.size-toggle{display:inline-flex;padding:5px;border-radius:30px;background:rgba(18,8,30,0.7);border:1.5px solid rgba(176,108,255,0.28);gap:4px;}
+.size-toggle button{font-family:inherit;font-size:14px;font-weight:600;color:#b9a6d2;cursor:pointer;border:none;background:transparent;padding:9px 20px;border-radius:24px;transition:all .2s;}
+.size-toggle button.active{color:#fff;background:linear-gradient(95deg,#ff7cc0,#ff4d97);box-shadow:0 4px 16px rgba(255,77,151,0.35);}
+
+.menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;}
+.drink-card{
+  position:relative;border-radius:26px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(40,20,64,0.62) 0%,rgba(18,9,34,0.74) 100%);
+  box-shadow:0 20px 50px rgba(0,0,0,0.42);border:1px solid rgba(176,108,255,0.22);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  display:flex;flex-direction:column;transition:transform .25s, box-shadow .25s, border-color .25s;
+}
+.drink-card:hover{transform:translateY(-6px);box-shadow:0 30px 64px rgba(176,108,255,0.4);border-color:rgba(176,108,255,0.45);}
+.drink-card .photo{
+  position:relative;height:300px;display:flex;align-items:flex-end;justify-content:center;
+  background:radial-gradient(ellipse 70% 55% at 50% 42%, rgba(176,108,255,0.20), rgba(255,95,166,0.10) 55%, transparent 72%);
+}
+.drink-card .photo::after{
+  content:"";position:absolute;left:50%;bottom:16px;transform:translateX(-50%);
+  width:60%;height:24px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(0,0,0,0.5),transparent 70%);
+  pointer-events:none;filter:blur(5px);
+}
+.drink-card .photo img{position:relative;z-index:1;height:290px;width:auto;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(0,0,0,0.5));}
+.ribbon{position:absolute;top:16px;left:16px;z-index:2;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:30px;font-size:12px;font-weight:700;letter-spacing:0.04em;color:#fff;background:linear-gradient(95deg,#ff7cc0,#ff4d97);box-shadow:0 6px 16px rgba(255,77,151,0.4);}
+.ribbon svg{width:13px;height:13px;}
+.fav{position:absolute;top:14px;right:14px;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,124,192,0.3);cursor:pointer;background:rgba(20,10,36,0.55);backdrop-filter:blur(6px);box-shadow:0 4px 14px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;transition:transform .15s;}
+.fav svg{width:20px;height:20px;stroke:#ff5fa6;fill:none;transition:fill .15s;}
+.fav:hover{transform:scale(1.1);}
+.fav.on svg{fill:#ff5fa6;}
+.drink-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;background:transparent;}
+.drink-name{font-size:20px;font-weight:700;color:#fff;line-height:1.2;}
+.drink-desc{font-size:14px;line-height:1.45;color:#b9a8cf;}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px;}
+.tag{font-size:11.5px;font-weight:600;color:#cbabe9;background:rgba(176,108,255,0.14);border:1px solid rgba(176,108,255,0.3);padding:4px 11px;border-radius:20px;}
+.tag.boba{color:#ffaccf;background:rgba(255,95,166,0.14);border-color:rgba(255,95,166,0.32);}
+.drink-foot{display:flex;align-items:center;justify-content:space-between;margin-top:8px;}
+.price{font-size:23px;font-weight:800;color:#ff7cc0;}
+.price small{font-size:13px;font-weight:600;color:#b9a8cf;opacity:.8;margin-left:2px;}
+.add-btn{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-size:14px;font-weight:700;color:#fff;cursor:pointer;border:none;padding:11px 18px;border-radius:24px;background:linear-gradient(95deg,#b06cff,#8a4dff);box-shadow:0 6px 18px rgba(138,77,255,0.36);transition:transform .15s, box-shadow .15s;}
+.add-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(138,77,255,0.5);}
+.add-btn svg{width:16px;height:16px;}
+.add-btn.added{background:linear-gradient(95deg,#3ec98a,#22a86a);box-shadow:0 6px 18px rgba(34,168,106,0.4);}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(140%);z-index:80;display:flex;align-items:center;gap:10px;padding:14px 22px;border-radius:30px;background:rgba(18,8,30,0.92);border:1px solid rgba(255,124,192,0.4);color:#fff;font-weight:600;font-size:15px;box-shadow:0 16px 44px rgba(0,0,0,0.5),0 0 22px rgba(255,95,166,0.3);transition:transform .35s cubic-bezier(.2,.8,.2,1);backdrop-filter:blur(10px);}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.toast svg{width:19px;height:19px;color:#ff8ec6;}
+
+/* ===== ABOUT ===== */
+.about{padding:118px 0;background:var(--ink-2);position:relative;overflow:hidden;}
+.about::before{content:"";position:absolute;top:-160px;right:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(176,108,255,0.18),transparent 65%);pointer-events:none;}
+.about-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center;}
+.about-copy .eyebrow{margin-bottom:22px;}
+.about-copy h2{font-size:48px;font-weight:800;line-height:1.08;color:#fff;letter-spacing:-0.01em;margin-bottom:22px;}
+.about-copy h2 .accent{font-family:'Dancing Script',cursive;font-weight:700;background:linear-gradient(92deg,#ff7cc0,#c66bff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding:0 4px;}
+.about-copy p{font-size:17px;line-height:1.7;color:#c6b6da;margin-bottom:18px;max-width:560px;}
+.about-stats{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+.stat{flex:1;min-width:120px;padding:22px 20px;border-radius:18px;background:rgba(176,108,255,0.08);border:1px solid rgba(176,108,255,0.22);text-align:center;}
+.stat .n{font-size:34px;font-weight:800;color:#fff;line-height:1;background:linear-gradient(92deg,#ff7cc0,#c66bff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.stat .l{font-size:13px;color:#b6a6c9;margin-top:8px;font-weight:500;}
+.about-visual{position:relative;display:flex;align-items:center;justify-content:center;}
+.about-visual .ring-glow{position:absolute;width:118%;height:118%;border-radius:50%;background:radial-gradient(circle,rgba(255,95,166,0.22),rgba(176,108,255,0.12) 50%,transparent 70%);}
+.about-visual img{position:relative;width:100%;border-radius:28px;box-shadow:0 30px 70px rgba(0,0,0,0.5);}
+.about-visual .float-cup{position:absolute;border-radius:24px;background:linear-gradient(180deg,rgba(40,20,64,0.8),rgba(18,9,34,0.86));border:1px solid rgba(176,108,255,0.3);padding:14px;box-shadow:0 20px 50px rgba(0,0,0,0.45);}
+.about-visual .float-cup img{width:88px;border-radius:0;box-shadow:none;}
+.about-visual .fc1{bottom:-26px;left:-34px;}
+.about-visual .fc2{top:-24px;right:-26px;}
+
+/* ===== LOCATIONS ===== */
+.locations{padding:118px 0;background:var(--ink);position:relative;}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:54px;}
+.loc-card{border-radius:26px;background:var(--card);border:1px solid var(--card-border);backdrop-filter:blur(12px);box-shadow:0 20px 50px rgba(0,0,0,0.35);overflow:hidden;display:flex;flex-direction:column;}
+.loc-map{height:200px;position:relative;overflow:hidden;background:#1a0d30;}
+.loc-map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(0.2) contrast(1.05);}
+.loc-info{padding:30px 32px 32px;}
+.loc-info h3{font-size:24px;font-weight:700;color:#fff;margin-bottom:6px;}
+
+/* google reviews / ratings */
+.stars{color:#ffc83d;letter-spacing:2px;font-size:15px;line-height:1;}
+.hero-reviews{display:flex;align-items:center;gap:9px;margin-top:20px;font-size:15px;font-weight:500;color:#d7c8e6;}
+.hero-reviews strong{color:#fff;font-weight:700;}
+.hero-reviews .rv-dot{opacity:.45;}
+.g-reviews{display:flex;align-items:center;gap:8px;font-size:13.5px;color:#c6b6da;margin-bottom:12px;font-weight:500;}
+.g-reviews strong{color:#fff;font-weight:700;}
+.g-quote{position:relative;margin-top:26px;padding:20px 22px;border-radius:16px;background:rgba(176,108,255,0.08);border:1px solid rgba(176,108,255,0.22);font-size:16px;line-height:1.6;color:#e3d6f2;font-style:italic;max-width:560px;}
+.g-quote span{display:block;margin-top:10px;font-size:13px;font-style:normal;font-weight:600;color:#a78bc7;letter-spacing:0.02em;}
+.loc-info .addr{font-size:15px;color:#c6b6da;line-height:1.55;margin-bottom:20px;}
+.hours{border-top:1px solid rgba(176,108,255,0.18);padding-top:18px;margin-bottom:24px;}
+.hours-row{display:flex;justify-content:space-between;font-size:14.5px;padding:6px 0;color:#cbb9e0;}
+.hours-row .d{color:#9d8cb6;}
+.hours-row.today{color:#fff;font-weight:600;}
+.hours-row.today .d{color:#ff8ec6;}
+.loc-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.loc-actions .btn{font-size:15px;padding:14px 22px;}
+.contact-strip{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:20px;border-top:1px solid rgba(176,108,255,0.18);font-size:15px;color:#cbb9e0;}
+.contact-strip a{color:#bfe7ff;font-weight:600;}
+.contact-strip svg{width:18px;height:18px;color:#8ad8ff;}
+
+/* ===== FOOTER ===== */
+.footer{background:#08030f;padding:70px 0 34px;border-top:1px solid rgba(176,108,255,0.14);}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;}
+.foot-brand .logo-text{font-family:'Dancing Script',cursive;font-size:30px;font-weight:700;color:#ffd6ef;text-shadow:0 0 10px rgba(255,95,166,0.5);}
+.foot-brand p{margin-top:14px;font-size:14.5px;line-height:1.6;color:#9d8cb6;max-width:280px;}
+.foot-social{display:flex;gap:12px;margin-top:20px;}
+.foot-social a{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(176,108,255,0.3);color:#c79bff;transition:all .2s;}
+.foot-social a:hover{background:rgba(176,108,255,0.16);color:#fff;transform:translateY(-2px);}
+.foot-social svg{width:18px;height:18px;}
+.foot-col h4{font-size:14px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:18px;}
+.foot-col a{display:block;font-size:14.5px;color:#a594bd;margin-bottom:11px;transition:color .2s;}
+.foot-col a:hover{color:#ff8ec6;}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:50px;padding-top:24px;border-top:1px solid rgba(176,108,255,0.12);font-size:13.5px;color:#8979a0;flex-wrap:wrap;gap:10px;}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1180px){
+  .hero::before{background:
+    linear-gradient(180deg, rgba(8,3,16,0.55) 0%, rgba(8,3,16,0.65) 40%, rgba(8,3,16,0.0) 60%, rgba(8,3,16,0.85) 100%),
+    linear-gradient(90deg, rgba(8,3,16,0.85) 0%, rgba(8,3,16,0.4) 60%, rgba(8,3,16,0.2) 100%);}
+  h1.headline{font-size:58px;}
+  h1.headline .script{font-size:60px;}
+  .nav-links{gap:24px;}
+  .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .about-grid{grid-template-columns:1fr;gap:48px;}
+  .sec-title{font-size:44px;}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:34px;}
+}
+@media (max-width:900px){
+  .nav-links{display:none;}
+  .wrap,.hero-inner,.features{padding-left:26px;padding-right:26px;}
+  .features{grid-template-columns:1fr;}
+  h1.headline{font-size:44px;}
+  h1.headline .script{font-size:50px;}
+  p.lede{font-size:17px;}
+  .spark.s1{display:none;}
+  .menu-grid{grid-template-columns:1fr;}
+  .menu-controls{flex-direction:column;align-items:stretch;}
+  .loc-grid{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+  .sec-title{font-size:36px;white-space:normal;}
+  .about-copy h2{font-size:36px;}
+}
+
+/* ===== CHASE MODE (cursor mascot) ===== */
+#cursor-chaser{
+  position:fixed;left:0;top:0;width:clamp(84px,8.5vw,128px);height:auto;
+  pointer-events:none;user-select:none;z-index:999999;
+  transform-origin:50% 62%;will-change:transform;opacity:0;display:none;
+  transition:opacity .35s ease;
+  filter:drop-shadow(0 12px 18px rgba(0,0,0,0.5));
+}
+body.chase-on #cursor-chaser{display:block;}
+
+.chase-bubble{
+  position:fixed;top:128px;right:30px;z-index:60;
+  width:60px;height:60px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 32% 28%, rgba(255,255,255,0.5), rgba(255,150,210,0.22) 44%, rgba(150,90,220,0.14) 72%, rgba(150,90,220,0.05));
+  border:1.5px solid rgba(255,180,225,0.42);
+  box-shadow:0 0 18px rgba(255,120,190,0.3), inset 0 0 14px rgba(255,255,255,0.25);
+  animation:chaseBubbleFloat 5s ease-in-out infinite;
+  transition:transform .2s, box-shadow .2s;
+}
+.chase-bubble:hover{transform:scale(1.08);box-shadow:0 0 28px rgba(255,120,190,0.5), inset 0 0 14px rgba(255,255,255,0.3);}
+.chase-bubble svg{width:26px;height:26px;color:#ff7cc0;fill:none;filter:drop-shadow(0 0 6px rgba(255,124,192,0.8));transition:transform .2s, color .2s;}
+.chase-bubble.active{box-shadow:0 0 30px rgba(255,95,166,0.7), inset 0 0 16px rgba(255,180,225,0.4);}
+.chase-bubble.active svg{color:#ff4d97;fill:#ff4d97;animation:chaseHeartBeat 1s ease-in-out infinite;}
+.chase-bubble .tip{position:absolute;right:72px;top:50%;transform:translateY(-50%);white-space:nowrap;background:rgba(18,8,30,0.92);border:1px solid rgba(255,124,192,0.35);color:#fff;font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:20px;opacity:0;pointer-events:none;transition:opacity .2s;}
+.chase-bubble:hover .tip{opacity:1;}
+@keyframes chaseBubbleFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+@keyframes chaseHeartBeat{0%,100%{transform:scale(1);}30%{transform:scale(1.18);}}
+@media (prefers-reduced-motion:reduce),(pointer:coarse){
+  #cursor-chaser{display:none!important;}
+  .chase-bubble{display:none!important;}
+}
+</style>
+
+</head>
+<body>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" data-screen-label="Home Hero">
+    <div class="bubble-field" id="bubbleField" aria-hidden="true"></div>
+
+    <!-- NAV -->
+    <div class="nav-wrap">
+      <nav class="navbar">
+        <a class="logo" href="#top">
+          <span class="ring">
+            <span class="lb-name">
+              <span class="lb-top">Bubble&nbsp;tea</span>
+              <span class="lb-bot">corner</span>
+            </span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#top" class="active">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#locations">Locations</a>
+          <a href="#locations">Midtown Location</a>
+        </div>
+        <div class="nav-cta">
+          <a href="tel:+14088271246" class="nav-call" aria-label="Call Bubble Tea Corner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1Z"></path></svg>
+          </a>
+          <a href="#menu" class="order-online">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 8Z"></path><path d="M8 8a4 4 0 0 1 8 0"></path><path d="M9 4h6"></path></svg>
+            Order Online
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO COPY -->
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg>
+          Kawaii Bubble Tea
+        </span>
+
+        <h1 class="headline">
+          Cute Sips,
+          <svg class="spark s1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c.6 5.6 2.4 7.4 8 8-5.6.6-7.4 2.4-8 8-.6-5.6-2.4-7.4-8-8 5.6-.6 7.4-2.4 8-8Z"></path></svg>
+          <span class="script">Glowing Vibes<svg class="heart-flourish" viewBox="0 0 56 40" fill="none" stroke="#ff8ec6" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c10 4 16 4 22-2"></path><path d="M30 12c-3 4-1 9 4 11 5-2 7-7 4-11-2-2.6-5-1.8-4 1-1-2.8-6-3.6-8-1Z" fill="#ff7cc0" stroke="none"></path></svg></span>
+        </h1>
+
+        <p class="lede">Handcrafted bubble tea made with love, premium ingredients, and a touch of kawaii magic.</p>
+
+        <div class="hero-reviews"><span class="stars">★★★★★</span><strong>4.7</strong><span class="rv-dot">·</span>146 Google reviews</div>
+
+        <div class="cta-row">
+          <a href="#menu" class="btn btn-primary">
+            Order Now
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 8Z"></path><path d="M8 8a4 4 0 0 1 8 0"></path><path d="M9 4h6"></path></svg>
+          </a>
+          <a href="#menu" class="btn btn-ghost">
+            View Menu
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2.5.5 9.5-4 13a7 7 0 0 1-4 5Z"></path><path d="M2 21c0-5 4-8 7-9"></path></svg>
+          </a>
+          <a href="tel:+14088271246" class="btn btn-call">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1Z"></path></svg>
+            Call Us
+          </a>
+        </div>
+
+        <div class="trust">
+          <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6.5" cy="7" r="2.4"></circle><circle cx="17.5" cy="7" r="2.4"></circle><ellipse cx="12" cy="14" rx="7" ry="6.4"></ellipse><circle cx="9" cy="13" r="1.5" fill="#0a0413"></circle><circle cx="15" cy="13" r="1.5" fill="#0a0413"></circle><circle cx="12" cy="16" r="1.1" fill="#0a0413"></circle></svg>
+          Fresh ingredients <span class="dot">•</span> Made to order <span class="dot">•</span> 100% kawaii
+        </div>
+      </div>
+
+      <!-- FEATURE CARDS -->
+      <div class="features">
+        <div class="feature">
+          <div class="ic pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2.5.5 9.5-4 13a7 7 0 0 1-4 5Z"></path><path d="M2 21c0-5 4-8 7-9"></path></svg>
+          </div>
+          <div>
+            <h3>Premium Ingredients</h3>
+            <p>We use only the finest tea leaves, fruits, and toppings.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="ic purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 8Z"></path><path d="M8 8a4 4 0 0 1 8 0"></path><path d="M9 4h6"></path></svg>
+          </div>
+          <div>
+            <h3>Handcrafted with Love</h3>
+            <p>Every drink is made fresh just for you.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="ic blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg>
+          </div>
+          <div>
+            <h3>Made to Make You Smile</h3>
+            <p>Kawaii vibes in every cup, every time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section menu" id="menu" data-screen-label="Menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 8Z"></path><path d="M8 8a4 4 0 0 1 8 0"></path></svg>
+          Our Menu
+        </span>
+        <h2 class="sec-title">Sip the <span class="accent">Rainbow</span></h2>
+        <p class="sec-sub">Nine signature creations, each blended fresh to order. Tap a category to explore, switch sizes, and add your favorites.</p>
+      </div>
+
+      <div class="menu-controls">
+        <div class="filters" id="filters">
+          <button class="filter active" data-cat="all">All Drinks</button>
+          <button class="filter" data-cat="milk">Milk Tea</button>
+          <button class="filter" data-cat="fruit">Fruit Tea</button>
+          <button class="filter" data-cat="smoothie">Smoothies</button>
+          <button class="filter" data-cat="special">Specials</button>
+        </div>
+        <div class="size-toggle" id="sizeToggle">
+          <button class="active" data-size="reg">Regular</button>
+          <button data-size="lg">Large</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- 1 -->
+        <article class="drink-card" data-cat="milk">
+          <div class="photo">
+            <span class="ribbon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.6-5 4.3 1.5 6.5L12 16.9 5.9 19.4 7.4 12.9l-5-4.3 6.6-.6L12 2z"></path></svg>Bestseller</span>
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/7f07e3b5-f59f-4da2-9ea5-2e62c9152bdf.png" alt="Classic Boba Milk Tea">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Classic Boba Milk Tea</div>
+            <p class="drink-desc">Signature black tea and fresh milk loaded with chewy tapioca pearls.</p>
+            <div class="tags"><span class="tag boba">Tapioca Pearls</span><span class="tag">Milk Tea</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="5.50" data-lg="6.50">$5.50</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="drink-card" data-cat="milk">
+          <div class="photo">
+            <span class="ribbon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.6-5 4.3 1.5 6.5L12 16.9 5.9 19.4 7.4 12.9l-5-4.3 6.6-.6L12 2z"></path></svg>Popular</span>
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/7a71ca63-d16a-4268-885d-2a485772027b.png" alt="Brown Sugar Boba">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Brown Sugar Boba</div>
+            <p class="drink-desc">Caramelized brown sugar swirled through creamy milk and warm pearls.</p>
+            <div class="tags"><span class="tag boba">Tapioca Pearls</span><span class="tag">Milk Tea</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="5.75" data-lg="6.75">$5.75</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="drink-card" data-cat="milk">
+          <div class="photo">
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/ec220a8e-4ca9-45f7-8613-550915c441f1.png" alt="Sea Salt Cream Brûlée">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Sea Salt Cream Brûlée</div>
+            <p class="drink-desc">Toasty brûlée milk tea crowned with a cloud of sea-salt cream foam.</p>
+            <div class="tags"><span class="tag">Cream Foam</span><span class="tag">Milk Tea</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="6.25" data-lg="7.25">$6.25</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="drink-card" data-cat="fruit">
+          <div class="photo">
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/f1ea1cae-baa1-420b-9894-ec6800eb7268.png" alt="Mango Passion">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Mango Passion</div>
+            <p class="drink-desc">Sun-ripened mango and passionfruit finished with orange popping boba.</p>
+            <div class="tags"><span class="tag boba">Popping Boba</span><span class="tag">Fruit Tea</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="5.95" data-lg="6.95">$5.95</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 5 -->
+        <article class="drink-card" data-cat="fruit">
+          <div class="photo">
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/5580a274-c32d-4723-b6d1-00897f7b1cca.png" alt="Peach Green Tea">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Peach Green Tea</div>
+            <p class="drink-desc">Jasmine green tea shaken with juicy peach and crystal-clear ice.</p>
+            <div class="tags"><span class="tag">Light &amp; Fruity</span><span class="tag">Fruit Tea</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="5.50" data-lg="6.50">$5.50</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 6 -->
+        <article class="drink-card" data-cat="fruit">
+          <div class="photo">
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/1f3d05cc-05e9-4364-9e5c-034b209a5420.png" alt="Kiwi Honeydew">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Kiwi Honeydew</div>
+            <p class="drink-desc">Honeydew melon and kiwi over green tea with bursting popping boba.</p>
+            <div class="tags"><span class="tag boba">Popping Boba</span><span class="tag">Fruit Tea</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="5.95" data-lg="6.95">$5.95</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 7 -->
+        <article class="drink-card" data-cat="smoothie">
+          <div class="photo">
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/d98ae687-b7d5-4a9f-90ab-24572735d48b.png" alt="Strawberry Dream">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Strawberry Dream</div>
+            <p class="drink-desc">Real strawberries blended creamy and smooth with a fluffy whipped top.</p>
+            <div class="tags"><span class="tag">Blended</span><span class="tag">Smoothie</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="6.25" data-lg="7.25">$6.25</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 8 -->
+        <article class="drink-card" data-cat="special">
+          <div class="photo">
+            <span class="ribbon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.6-5 4.3 1.5 6.5L12 16.9 5.9 19.4 7.4 12.9l-5-4.3 6.6-.6L12 2z"></path></svg>New</span>
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/bc4c9b4c-83da-48b1-976e-75f5da2d3108.png" alt="Strawberry Matcha">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Strawberry Matcha</div>
+            <p class="drink-desc">Stone-ground matcha layered over sweet strawberry purée and milk.</p>
+            <div class="tags"><span class="tag">Layered</span><span class="tag">Specialty</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="6.75" data-lg="7.75">$6.75</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+        <!-- 9 -->
+        <article class="drink-card" data-cat="special">
+          <div class="photo">
+            <span class="ribbon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.6-5 4.3 1.5 6.5L12 16.9 5.9 19.4 7.4 12.9l-5-4.3 6.6-.6L12 2z"></path></svg>New</span>
+            <button class="fav" aria-label="Save"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg></button>
+            <img src="assets/fef3a797-beae-42aa-afa1-eeb088ea528e.png" alt="Galaxy Taro">
+          </div>
+          <div class="drink-body">
+            <div class="drink-name">Galaxy Taro</div>
+            <p class="drink-desc">Dreamy taro and butterfly-pea swirl with a cosmic color-changing finish.</p>
+            <div class="tags"><span class="tag">Color-Changing</span><span class="tag">Specialty</span></div>
+            <div class="drink-foot">
+              <div class="price" data-reg="6.75" data-lg="7.75">$6.75</div>
+              <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about" data-screen-label="About">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg>
+          Our Story
+        </span>
+        <h2>Big flavor, <span class="accent">tiny panda</span> energy</h2>
+        <p>Bubble Tea Station Corner is owned and run by two sisters — each pouring their heart into their own neighborhood location. What began as a shared love of authentic, Taiwan-inspired tea drinks has grown into a local favorite across Carson City.</p>
+        <p>From classic milk teas and Thai tea to rich tiger brown sugar and dreamy color-changing specials, every cup is hand-crafted with fresh ingredients and a whole lot of kawaii spirit — because a good day deserves a great sip.</p>
+        <p class="g-quote">“The best boba in the Carson–Reno area — the staff is wonderful and welcoming.”<span>— Google review</span></p>
+        <div class="about-stats">
+          <div class="stat"><div class="n">★ 4.7</div><div class="l">Google Rating</div></div>
+          <div class="stat"><div class="n">100%</div><div class="l">Made to Order</div></div>
+          <div class="stat"><div class="n">146</div><div class="l">Google Reviews</div></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="ring-glow"></div>
+        <img src="assets/8e73a0da-fb61-401d-bc6e-eb0d355e27cc.png" alt="Bubble Tea Corner neon panda sign">
+        <div class="float-cup fc1"><img src="assets/fef3a797-beae-42aa-afa1-eeb088ea528e.png" alt="Galaxy Taro"></div>
+        <div class="float-cup fc2"><img src="assets/d98ae687-b7d5-4a9f-90ab-24572735d48b.png" alt="Strawberry Dream"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATIONS ============ -->
+  <section class="section locations" id="locations" data-screen-label="Locations">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+          Find Us
+        </span>
+        <h2 class="sec-title">Come Say <span class="accent">Hi</span></h2>
+        <p class="sec-sub">Swing by for a fresh cup, or give us a call to order ahead — we'll have it ready and glowing.</p>
+      </div>
+
+      <div class="loc-grid">
+        <div class="loc-card">
+          <div class="loc-map"><iframe title="Map to Bubble Tea Station Corner" src="https://www.google.com/maps?q=2073+E+William+St+Suite+1,+Carson+City,+NV+89701&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="loc-info">
+            <div class="g-reviews"><span class="stars">★★★★★</span><strong>4.7</strong>&nbsp;· 146 Google reviews</div>
+            <h3>Bubble Tea Station Corner</h3>
+            <p class="addr">2073 E William St, Suite 1<br>Carson City, NV 89701</p>
+            <div class="loc-actions">
+              <a href="https://maps.google.com/?q=2073+E+William+St+Suite+1,+Carson+City,+NV+89701" target="_blank" rel="noopener" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                Get Directions
+              </a>
+              <a href="#menu" class="btn btn-ghost">Order Online</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="loc-card">
+          <div class="loc-info">
+            <h3>Hours &amp; Contact</h3>
+            <p class="addr">Open seven days a week — come say hi.</p>
+            <div class="hours">
+              <div class="hours-row"><span class="d">Monday – Thursday</span><span>11:00am – 8:00pm</span></div>
+              <div class="hours-row"><span class="d">Friday – Saturday</span><span>11:00am – 8:00pm</span></div>
+              <div class="hours-row"><span class="d">Sunday</span><span>11:00am – 8:00pm</span></div>
+            </div>
+            <div class="loc-actions">
+              <a href="tel:+14088271246" class="btn btn-call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2.1Z"></path></svg>
+                (408) 827-1246
+              </a>
+            </div>
+            <div class="contact-strip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="m4 6 8 6 8-6"></path></svg>
+              <a href="mailto:hello@bubbleteacorner.com">hello@bubbleteacorner.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div class="foot-brand">
+        <div class="logo-text">Bubble Tea Station Corner</div>
+        <p>Handcrafted bubble tea made with love, premium ingredients, and a touch of kawaii magic.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/bubbletea.corner/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.3 1.7 3.9 4 4.2v3c-1.5.1-2.9-.3-4-1.1V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.1c-.3-.1-.6-.2-1-.2a3 3 0 1 0 3 3V3h3Z"></path></svg></a>
+          <a href="https://www.facebook.com/bubbleteastationcorner/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.6-1.5H17V2.5h-2.6C11.7 2.5 11 4 11 6.3V9H9v3h2v9h3v-9h2.2l.4-3H14Z"></path></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#top">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#locations">Locations</a>
+      </div>
+      <div class="foot-col">
+        <h4>Menu</h4>
+        <a href="#menu">Milk Tea</a>
+        <a href="#menu">Fruit Tea</a>
+        <a href="#menu">Smoothies</a>
+        <a href="#menu">Specials</a>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <a href="https://maps.google.com/?q=2073+E+William+St+Suite+1,+Carson+City,+NV+89701" target="_blank" rel="noopener">2073 E William St, Suite 1<br>Carson City, NV 89701</a>
+        <a href="tel:+14088271246">(408) 827-1246</a>
+        <a href="mailto:hello@bubbleteacorner.com">hello@bubbleteacorner.com</a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Bubble Tea Station Corner. All rights reserved.</span>
+      <span>Made with 💜 and a little kawaii magic.</span>
+    </div>
+  </footer>
+
+  <!-- toast -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+    <span id="toastMsg">Added to your order</span>
+  </div>
+
+  <!-- chase mode: heart bubble toggle + cursor mascot -->
+  <button class="chase-bubble" id="chaseBubble" type="button" aria-label="Toggle chase mode" aria-pressed="false">
+    <span class="tip">Chase mode</span>
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.3 4.8c2 0 3.3 1.2 4.7 3 1.4-1.8 2.7-3 4.7-3C18 4.8 19.6 8.3 18 11.7 15.5 16.3 12 21 12 21Z"></path></svg>
+  </button>
+  <img id="cursor-chaser" src="assets/254b6edd-b34a-4831-9733-9538aedf749f.webp" alt="" aria-hidden="true">
+
+  <script src="assets/0d1072e6-2443-4678-bd65-634811c87160.js"></script>
+
+
+</body></html>
