@@ -3,6 +3,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bubble Tea Station Corner — Kawaii Bubble Tea</title>
+<meta name="description" content="Handcrafted kawaii bubble tea in Carson City — premium ingredients, made to order. Cute sips, glowing vibes.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bubble Tea Station Corner">
+<meta property="og:url" content="https://bubble-tea-corner.vercel.app/">
+<meta property="og:title" content="Bubble Tea Station Corner — Kawaii Bubble Tea">
+<meta property="og:description" content="Handcrafted kawaii bubble tea in Carson City — premium ingredients, made to order.">
+<meta property="og:image" content="https://bubble-tea-corner.vercel.app/assets/og-image.png">
+<meta property="og:image:secure_url" content="https://bubble-tea-corner.vercel.app/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bubble Tea Station Corner neon panda sign">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bubble Tea Station Corner — Kawaii Bubble Tea">
+<meta name="twitter:description" content="Handcrafted kawaii bubble tea in Carson City — premium ingredients, made to order.">
+<meta name="twitter:image" content="https://bubble-tea-corner.vercel.app/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <style>/* vietnamese */
@@ -537,8 +553,11 @@ p.lede{margin:26px 0 0;font-size:19px;line-height:1.6;font-weight:400;color:#d7c
   .nav-call{display:none;}
   .order-online{padding:10px 15px;font-size:14px;gap:7px;}
   .order-online svg{width:16px;height:16px;}
-  /* hero: center the neon sign in the initial view (mobile only) */
-  .hero{background-size:auto 560px;background-position:63% 94px;background-color:#0a0413;}
+  /* hero: smaller, centered, glowing neon sign on initial view (mobile only) */
+  .hero{background-size:auto 350px;background-position:88% 150px;background-color:#0a0413;}
+  .hero::before{background:
+    linear-gradient(180deg, rgba(10,4,19,0.45) 0%, rgba(10,4,19,0.5) 26%, rgba(10,4,19,0.12) 48%, rgba(10,4,19,0.5) 76%, rgba(10,4,19,1) 100%),
+    linear-gradient(90deg, rgba(10,4,19,0.6) 0%, rgba(10,4,19,0.2) 55%, rgba(10,4,19,0) 100%);}
   .wrap,.hero-inner,.features{padding-left:20px;padding-right:20px;}
   .hero-copy{padding-top:52px;}
   h1.headline{font-size:38px;}
