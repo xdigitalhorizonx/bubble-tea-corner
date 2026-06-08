@@ -118,6 +118,27 @@
   }
 })();
 
+/* ===================== LIGHT MODE TOGGLE ===================== */
+(function () {
+  'use strict';
+  var btn = document.getElementById('lightModeBubble');
+  if (!btn) return;
+  var tip = btn.querySelector('.tip');
+  function sync(on) {
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (tip) tip.textContent = on ? 'Dark mode' : 'Light mode';
+  }
+  // initial paint state is set by the inline head script; mirror it on the button
+  sync(document.body.classList.contains('light'));
+  btn.addEventListener('click', function () {
+    var on = !document.body.classList.contains('light');
+    document.body.classList.toggle('light', on);
+    sync(on);
+    try { localStorage.setItem('btc-theme', on ? 'light' : 'dark'); } catch (e) {}
+  });
+})();
+
 /* ===================== CHASE MODE (cursor mascot) ===================== */
 (function () {
   'use strict';
